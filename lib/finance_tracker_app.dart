@@ -1,10 +1,18 @@
+import 'package:finance_tracker/core/routing/app_router.dart';
+import 'package:finance_tracker/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 class FinanceTrackerApp extends StatelessWidget {
-  const FinanceTrackerApp({super.key});
+  final AppRouter appRouter;
+  const FinanceTrackerApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Finance Tracker',
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: appRouter.generateRoute,
+      initialRoute: Routes.onBording,
+    );
   }
 }
