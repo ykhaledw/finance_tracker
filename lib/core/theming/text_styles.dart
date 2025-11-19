@@ -1,91 +1,92 @@
 import 'package:finance_tracker/core/theming/app_colors.dart';
 import 'package:finance_tracker/core/theming/font_weight_helper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextStyles {
   static const String fontFamily = 'Inter';
   // Display / Headings
-  static const TextStyle h1 = TextStyle(
+  static TextStyle h1 = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 32,           // 32sp
+    fontSize: 32.sp,           // 32sp
     fontWeight: FontWeightHelper.bold,
-    letterSpacing: -0.5,
-    height: 1.2,
+    letterSpacing: -0.5.h,
+    height: 1.2.h,
   );
   
-  static const TextStyle h2 = TextStyle(
+  static  TextStyle h2 = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 24,           // 24sp
+    fontSize: 24.sp,           // 24sp
     fontWeight: FontWeightHelper.bold,
-    letterSpacing: -0.3,
-    height: 1.3,
+    letterSpacing: -0.3.h,
+    height: 1.3.h,
   );
   
-  static const TextStyle h3 = TextStyle(
+  static TextStyle h3 = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 20,           // 20sp
+    fontSize: 20.sp,           // 20sp
     fontWeight: FontWeightHelper.semiBold,
-    letterSpacing: -0.2,
-    height: 1.4,
+    letterSpacing: -0.2.h,
+    height: 1.4.h,
   );
   
-  static const TextStyle h4 = TextStyle(
+  static TextStyle h4 = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 18,           // 18sp
+    fontSize: 18.sp,           // 18sp
     fontWeight: FontWeightHelper.semiBold,
-    height: 1.4,
+    height: 1.4.h,
   );
   
   // Body Text
-  static const TextStyle bodyLarge = TextStyle(
+  static TextStyle bodyLarge = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 16,           // 16sp
+    fontSize: 16.sp,           // 16sp
     fontWeight: FontWeightHelper.regular,
-    height: 1.5,
+    height: 1.5.h,
   );
   
-  static const TextStyle bodyMedium = TextStyle(
+  static TextStyle bodyMedium = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 14,           // 14sp
+    fontSize: 14.sp,           // 14sp
     fontWeight: FontWeightHelper.regular,
-    height: 1.5,
+    height: 1.5.h,
   );
   
-  static const TextStyle bodySmall = TextStyle(
+  static TextStyle bodySmall = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 12,           // 12sp
+    fontSize: 12.sp,           // 12sp
     fontWeight: FontWeightHelper.regular,
-    height: 1.4,
+    height: 1.4.h,
   );
   
   // Special Styles
-  static const TextStyle amountLarge = TextStyle(
+  static TextStyle amountLarge = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 40,           // 40sp - For main balance display
+    fontSize: 40.sp,           // 40sp - For main balance display
     fontWeight: FontWeightHelper.bold,
-    letterSpacing: -1,
-    height: 1.2,
+    letterSpacing: -1.h,
+    height: 1.2.sp,
   );
   
-  static const TextStyle amountMedium = TextStyle(
+  static TextStyle amountMedium = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 24,           // 24sp - For transaction amounts
+    fontSize: 24.sp,           // 24sp - For transaction amounts
     fontWeight: FontWeightHelper.bold,
-    letterSpacing: -0.5,
+    letterSpacing: -0.5.h,
   );
   
-  static const TextStyle button = TextStyle(
+  static TextStyle button = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 16,           // 16sp
+    fontSize: 16.sp,           // 16sp
     fontWeight: FontWeightHelper.semiBold,
-    letterSpacing: 0.5,
+    letterSpacing: 0.5.h,
   );
   
-  static const TextStyle caption = TextStyle(
+  static  TextStyle caption = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 12,           // 12sp
+    fontSize: 12.sp,           // 12sp
     fontWeight: FontWeightHelper.regular,
     color: AppColors.textSecondaryDark,
-    height: 1.3,
+    height: 1.3.h,
   );
 }

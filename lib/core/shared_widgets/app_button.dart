@@ -1,6 +1,7 @@
 import 'package:finance_tracker/core/theming/app_colors.dart';
 import 'package:finance_tracker/core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppButton extends StatelessWidget {
   final String buttonText;
@@ -18,12 +19,12 @@ class AppButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        width: buttonWidth ?? double.infinity,
+        width: buttonWidth?.w ?? double.infinity,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(borderRadius ?? 12),
+          borderRadius: BorderRadius.circular(borderRadius?.r ?? 12.r),
           color: buttonColor ?? AppColors.primary,
         ),
-        padding: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 10.h),
         child: Center(
           child: Text(
             buttonText,

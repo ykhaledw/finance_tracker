@@ -1,6 +1,7 @@
 import 'package:finance_tracker/core/shared_widgets/app_button.dart';
 import 'package:finance_tracker/core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class OnboardingComponents extends StatelessWidget {
@@ -22,13 +23,13 @@ class OnboardingComponents extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 8),
+        SizedBox(height: 8.h),
         SvgPicture.asset(svgAsset),
-        SizedBox(height: 20),
+        SizedBox(height: 20.h),
         Text(title, style: TextStyles.h1),
-        SizedBox(height: 4),
+        SizedBox(height: 4.h),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 16.w),
           child: Text(
             description,
             style: TextStyles.bodyLarge,
@@ -38,7 +39,7 @@ class OnboardingComponents extends StatelessWidget {
         const Spacer(),
         if (pageIndex != 0)
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
             child: AppButton(buttonText: 'Next', onPressed: onNextPressed),
           ),
       ],
