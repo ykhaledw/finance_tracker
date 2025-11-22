@@ -26,7 +26,7 @@ class OnboardingComponents extends StatelessWidget {
         SizedBox(height: 8.h),
         SvgPicture.asset(svgAsset),
         SizedBox(height: 20.h),
-        Text(title, style: TextStyles.h1),
+        Text(title, style: TextStyles.h1, textAlign: TextAlign.center),
         SizedBox(height: 4.h),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w),

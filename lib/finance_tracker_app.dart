@@ -15,6 +15,7 @@ class FinanceTrackerApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Finance Tracker',
         debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark(),
         onGenerateRoute: appRouter.generateRoute,
         initialRoute: Routes.onBording,
       ),

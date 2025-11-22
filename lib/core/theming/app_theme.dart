@@ -11,30 +11,30 @@ class AppTheme {
 
     // Color Scheme
     colorScheme: ColorScheme.dark(
-      primary: AppColors.primary,
-      secondary: AppColors.secondary,
-      surface: AppColors.backgroundDark,
-      error: AppColors.error,
+      primary: DarkAppColors.primary,
+      secondary: DarkAppColors.secondary,
+      surface: DarkAppColors.backgroundDark,
+      error: DarkAppColors.error,
       onPrimary: Colors.white,
       onSecondary: Colors.white,
-      onSurface: AppColors.textPrimaryDark,
+      onSurface: DarkAppColors.textPrimaryDark,
     ),
 
     // Scaffold
-    scaffoldBackgroundColor: AppColors.backgroundDark,
+    scaffoldBackgroundColor: DarkAppColors.backgroundDark,
 
     // App Bar
     appBarTheme: AppBarTheme(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: DarkAppColors.backgroundDark,
       elevation: 0,
       centerTitle: false,
-      titleTextStyle: TextStyles.h3.copyWith(color: AppColors.textPrimaryDark),
-      iconTheme: IconThemeData(color: AppColors.textPrimaryDark, size: 24),
+      titleTextStyle: TextStyles.h3.copyWith(color: DarkAppColors.textPrimaryDark),
+      iconTheme: IconThemeData(color: DarkAppColors.textPrimaryDark, size: 24),
     ),
 
     // Cards
     cardTheme: CardThemeData(
-      color: AppColors.surfaceDark,
+      color: DarkAppColors.surfaceDark,
       elevation: 0,
       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -43,7 +43,7 @@ class AppTheme {
     // Buttons
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.primary,
+        backgroundColor: DarkAppColors.primary,
         foregroundColor: Colors.white,
         elevation: 0,
         minimumSize: Size(double.infinity, 56),
@@ -55,8 +55,8 @@ class AppTheme {
 
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        foregroundColor: AppColors.primary,
-        side: BorderSide(color: AppColors.primary, width: 2),
+        foregroundColor: DarkAppColors.primary,
+        side: BorderSide(color: DarkAppColors.primary, width: 2),
         minimumSize: Size(double.infinity, 56),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
@@ -65,7 +65,7 @@ class AppTheme {
     // Text Buttons
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        foregroundColor: AppColors.primary,
+        foregroundColor: DarkAppColors.primary,
         textStyle: TextStyles.button,
       ),
     ),
@@ -73,7 +73,7 @@ class AppTheme {
     // Input Fields
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: AppColors.surfaceDark,
+      fillColor: DarkAppColors.surfaceDark,
       contentPadding: EdgeInsets.all(16),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
@@ -88,25 +88,25 @@ class AppTheme {
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.primary, width: 2),
+        borderSide: BorderSide(color: DarkAppColors.primary, width: 2),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: AppColors.error, width: 1),
+        borderSide: BorderSide(color: DarkAppColors.error, width: 1),
       ),
       labelStyle: TextStyles.bodyMedium.copyWith(
-        color: AppColors.textSecondaryDark,
+        color: DarkAppColors.textSecondaryDark,
       ),
       hintStyle: TextStyles.bodyMedium.copyWith(
-        color: AppColors.textSecondaryDark.withValues(alpha: 0.5),
+        color: DarkAppColors.textSecondaryDark.withValues(alpha: 0.5),
       ),
     ),
 
     // Bottom Navigation
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: AppColors.surfaceDark,
-      selectedItemColor: AppColors.primary,
-      unselectedItemColor: AppColors.textSecondaryDark,
+      backgroundColor: DarkAppColors.surfaceDark,
+      selectedItemColor: DarkAppColors.primary,
+      unselectedItemColor: DarkAppColors.textSecondaryDark,
       selectedLabelStyle: TextStyles.caption,
       unselectedLabelStyle: TextStyles.caption,
       type: BottomNavigationBarType.fixed,
@@ -115,7 +115,7 @@ class AppTheme {
 
     // Dialogs
     dialogTheme: DialogThemeData(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: DarkAppColors.surfaceDark,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       titleTextStyle: TextStyles.h3,
       contentTextStyle: TextStyles.bodyMedium,
@@ -123,8 +123,8 @@ class AppTheme {
 
     // Chips
     chipTheme: ChipThemeData(
-      backgroundColor: AppColors.surfaceDark,
-      selectedColor: AppColors.primary,
+      backgroundColor: DarkAppColors.surfaceDark,
+      selectedColor: DarkAppColors.primary,
       labelStyle: TextStyles.bodyMedium,
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

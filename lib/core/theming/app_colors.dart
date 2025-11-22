@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-class AppColors {
+class DarkAppColors {
   static const Color primary = Color(0xFF0891B2); // Teal
-  static const Color primaryDark = Color(0xFF0E7490); // Darker Teal
   static const Color primaryLight = Color(0xFF06B6D4); // Lighter Teal
 
   static const Color secondary = Color(0xFF7C3AED); // Purple
-  static const Color secondaryDark = Color(0xFF6D28D9); // Darker Purple
   static const Color secondaryLight = Color(0xFF8B5CF6); // Lighter Purple
 
   // Status Colors
@@ -42,15 +40,18 @@ class AppColors {
 }
 
 
-class AppColorsLight {
+class LightAppColors {
   // Brand Colors (Same as dark)
   static const Color primary = Color(0xFF0891B2);
+  static const Color primaryLight = Color(0xFF06B6D4);
   static const Color secondary = Color(0xFF7C3AED);
+  static const Color secondaryLight = Color(0xFF8B5CF6);
   
   // Status Colors (Same)
   static const Color success = Color(0xFF10B981);
   static const Color warning = Color(0xFFF59E0B);
   static const Color error = Color(0xFFEF4444);
+  static const Color info = Color(0xFF3B82F6);
   
   // Background Colors (Light Mode)
   static const Color backgroundLight = Color(0xFFF8FAFC); // Off White
@@ -60,5 +61,20 @@ class AppColorsLight {
   static const Color textPrimaryLight = Color(0xFF0F172A);   // Dark Navy
   static const Color textSecondaryLight = Color(0xFF475569); // Dark Gray
   
-  // Categories (Same colors work for both themes)
+  // Category Colors
+  static const Color foodColor = Color(0xFFEF4444); // Red
+  static const Color transportColor = Color(0xFF3B82F6); // Blue
+  static const Color shoppingColor = Color(0xFFF59E0B); // Amber
+  static const Color billsColor = Color(0xFF8B5CF6); // Purple
+  static const Color entertainmentColor = Color(0xFFEC4899); // Pink
+  static const Color healthColor = Color(0xFF10B981); // Green
+  static const Color travelColor = Color(0xFF06B6D4); // Cyan
+  static const Color othersColor = Color(0xFF64748B); // Gray
+
+  // Gradients
+  static const LinearGradient primaryGradient = LinearGradient(
+    colors: [primary, secondary],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
 }
