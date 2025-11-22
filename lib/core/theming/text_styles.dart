@@ -1,4 +1,3 @@
-import 'package:finance_tracker/core/theming/app_colors.dart';
 import 'package:finance_tracker/core/theming/font_weight_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -86,7 +85,6 @@ class TextStyles {
     fontFamily: fontFamily,
     fontSize: 12.sp,           // 12sp
     fontWeight: FontWeightHelper.regular,
-    color: AppColors.textSecondaryDark,
     height: 1.3.h,
   );
 }
