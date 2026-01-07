@@ -22,7 +22,7 @@ class AppButton extends StatelessWidget {
         width: buttonWidth?.w ?? double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(borderRadius?.r ?? 12.r),
-          color: buttonColor ?? DarkAppColors.primary,
+          color: buttonColor ?? AppColors.primary,
         ),
         padding: EdgeInsets.symmetric(vertical: 10.h),
         child: Center(
